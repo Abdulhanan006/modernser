@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Services Component</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Services</h2>
+                <p>Innovative solutions tailored to elevate your business and drive growth in the digital age.</p>
+            </div>
+
+            <div class="services-wrapper">
+                <!-- Desktop Tab Navigation -->
+                <div class="tabs-nav" role="tablist">
+                    <button class="tab-btn active" data-target="service-1" role="tab" aria-selected="true" aria-controls="service-1">
+                        <i class="ph ph-code"></i> Web Development
+                    </button>
+                    <button class="tab-btn" data-target="service-2" role="tab" aria-selected="false" aria-controls="service-2">
+                        <i class="ph ph-device-mobile"></i> Mobile Apps
+                    </button>
+                    <button class="tab-btn" data-target="service-3" role="tab" aria-selected="false" aria-controls="service-3">
+                        <i class="ph ph-brain"></i> AI Solutions
+                    </button>
+                    <button class="tab-btn" data-target="service-4" role="tab" aria-selected="false" aria-controls="service-4">
+                        <i class="ph ph-robot"></i> Python Automation
+                    </button>
+                    <button class="tab-btn" data-target="service-5" role="tab" aria-selected="false" aria-controls="service-5">
+                        <i class="ph ph-cloud-arrow-up"></i> Cloud Integration
+                    </button>
+                    <!-- Animated Indicator for Desktop Tabs -->
+                    <div class="tab-indicator"></div>
+                </div>
+
+                <!-- Services Content Area -->
+                <div class="services-content-wrapper">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-panel active" id="service-1" role="tabpanel">
+                        <button class="accordion-header active" data-target="service-1" aria-expanded="true">
+                            <span><i class="ph ph-code"></i> Web Development</span>
+                            <i class="ph ph-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="panel-content">
+                            <div class="panel-content-inner">
+                                <div class="service-details">
+                                    <div class="service-icon-large">
+                                        <i class="ph-duotone ph-code"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>High-Performance Web Development</h3>
+                                        <p>We build scalable, secure, and blazing-fast web applications using the latest modern frameworks. From elegant marketing sites to complex SaaS platforms, we deliver excellence.</p>
+                                        <ul class="features-list">
+                                            <li><i class="ph-fill ph-check-circle"></i> Custom React & Next.js applications</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Responsive, mobile-first design</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> SEO optimization and performance tuning</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Secure RESTful and GraphQL APIs</li>
+                                        </ul>
+                                        <a href="#" class="btn-cta">Start Your Project <i class="ph ph-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-panel" id="service-2" role="tabpanel">
+                        <button class="accordion-header" data-target="service-2" aria-expanded="false">
+                            <span><i class="ph ph-device-mobile"></i> Mobile Apps</span>
+                            <i class="ph ph-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="panel-content">
+                            <div class="panel-content-inner">
+                                <div class="service-details">
+                                    <div class="service-icon-large">
+                                        <i class="ph-duotone ph-device-mobile"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Cross-Platform Mobile Applications</h3>
+                                        <p>Reach your users wherever they are with beautiful, native-feeling mobile apps for iOS and Android. We utilize React Native and Flutter for efficient, unified codebases.</p>
+                                        <ul class="features-list">
+                                            <li><i class="ph-fill ph-check-circle"></i> iOS and Android compatibility</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Seamless offline capabilities</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Push notifications and user engagement</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> App Store & Google Play deployment</li>
+                                        </ul>
+                                        <a href="#" class="btn-cta">Explore Mobile <i class="ph ph-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-panel" id="service-3" role="tabpanel">
+                        <button class="accordion-header" data-target="service-3" aria-expanded="false">
+                            <span><i class="ph ph-brain"></i> AI Solutions</span>
+                            <i class="ph ph-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="panel-content">
+                            <div class="panel-content-inner">
+                                <div class="service-details">
+                                    <div class="service-icon-large">
+                                        <i class="ph-duotone ph-brain"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Next-Generation AI Integration</h3>
+                                        <p>Harness the power of artificial intelligence to automate workflows, glean insights, and create magical user experiences. We integrate cutting-edge LLMs and machine learning models.</p>
+                                        <ul class="features-list">
+                                            <li><i class="ph-fill ph-check-circle"></i> Custom AI chatbot integration</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Predictive analytics and data modeling</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Natural Language Processing (NLP)</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Process automation through AI agents</li>
+                                        </ul>
+                                        <a href="#" class="btn-cta">Discover AI <i class="ph ph-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-panel" id="service-4" role="tabpanel">
+                        <button class="accordion-header" data-target="service-4" aria-expanded="false">
+                            <span><i class="ph ph-robot"></i> Python Automation</span>
+                            <i class="ph ph-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="panel-content">
+                            <div class="panel-content-inner">
+                                <div class="service-details">
+                                    <div class="service-icon-large">
+                                        <i class="ph-duotone ph-robot"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Intelligent Business Automation</h3>
+                                        <p>Eliminate repetitive tasks and reduce human error with robust Python automation scripts. We connect your disjointed systems into a unified, automated pipeline.</p>
+                                        <ul class="features-list">
+                                            <li><i class="ph-fill ph-check-circle"></i> Data scraping and ETL pipelines</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> API integrations and synchronization</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Automated reporting and alerts</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Workflow orchestration</li>
+                                        </ul>
+                                        <a href="#" class="btn-cta">Automate Now <i class="ph ph-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-panel" id="service-5" role="tabpanel">
+                        <button class="accordion-header" data-target="service-5" aria-expanded="false">
+                            <span><i class="ph ph-cloud-arrow-up"></i> Cloud Integration</span>
+                            <i class="ph ph-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="panel-content">
+                            <div class="panel-content-inner">
+                                <div class="service-details">
+                                    <div class="service-icon-large">
+                                        <i class="ph-duotone ph-cloud-arrow-up"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Scalable Cloud Infrastructure</h3>
+                                        <p>Modernize your infrastructure by migrating to the cloud. We design, deploy, and manage secure and highly available environments on AWS, Azure, or Google Cloud.</p>
+                                        <ul class="features-list">
+                                            <li><i class="ph-fill ph-check-circle"></i> Cloud migration and strategy</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> Serverless architecture design</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> DevOps and CI/CD pipelines</li>
+                                            <li><i class="ph-fill ph-check-circle"></i> 24/7 Monitoring and support</li>
+                                        </ul>
+                                        <a href="#" class="btn-cta">Scale Up <i class="ph ph-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
